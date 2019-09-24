@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 2rem auto;
+}
+
+.car-img-container {
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  padding-bottom: 0.85rem;
+  margin: 1.2rem 0 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  max-width: 15rem;
+}
+
+.movie-info {
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.movie-title {
+  margin: 1.8rem 0 1.6rem;
+}
+.movie-title h1 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+}
+
+.movie-rating {
+  margin: 1.5rem 0;
+}
+
+.tags {
+  margin: 1.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags .tag {
+  font-size: 0.7rem;
+  border: 2px solid #000;
+  padding: 0.2rem 0.8rem;
+  margin: 0.3rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-img {
+    /* clip-path: circle(80.1% at 7% 4%); */
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .tags {
+    justify-content: flex-end;
+  }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+form input {
+  border: 2px solid #aaa;
+  color: #333;
+  font-size: 14px;
+  font-family: Lato;
+  padding: 10px 15px;
+  height: 40px;
+  width: 300px;
+  max-width: 100%;
+}
+
+form button {
+  border: 1px solid #aaa;
+  background-color: #aaa;
+  color: #fff;
+  padding: 0 12px;
+  height: 40px;
+}
+
+form button:focus {
+  outline: none;
+}
+
+form button:active {
+  opacity: 0.7;
+}
