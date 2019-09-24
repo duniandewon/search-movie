@@ -12,6 +12,11 @@ export const MovieProvider = ({ children }) => {
       `http://www.omdbapi.com/?apikey=eecb0e0a&s=${movieName}`
     );
 
+    if (!res.data.Search) {
+      setMovies([]);
+      return;
+    }
+
     const movieList = res.data.Search.map(movie => movie.imdbID);
 
     setMovies(movieList);
