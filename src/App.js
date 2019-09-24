@@ -8,8 +8,11 @@ import './styles.css';
 
 const App = () => (
   <MovieProvider>
-    <Search />
-    <Movies />
+    <div className='container'>
+      <h1 style={{ marginBottom: '20px' }}>Search Movie App</h1>
+      <Search />
+      <Movies />
+    </div>
   </MovieProvider>
 );
 
