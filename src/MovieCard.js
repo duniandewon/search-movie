@@ -16,6 +16,10 @@ const MovieCard = props => {
 
   const { Title, Released, Genre, Plot, Poster, imdbRating } = Movie;
 
+  if (!Poster || Poster === 'N/A') {
+    return null;
+  }
+
   return (
     <div className='card'>
       <div className='car-img-container'>
